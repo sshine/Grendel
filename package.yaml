@@ -1,0 +1,45 @@
+name:        Grendel
+version:     0.1.0
+
+synopsis:    'A comic book viewer'
+description: 'A comic book viewer'
+category:    Web
+license:     MIT
+
+homepage:    https://github.com/sshine/Grendel
+author:      Simon Shine
+maintainer:  shreddedglory@gmail.com
+copyright:   2020 Simon Shine
+
+dependencies:
+  - base
+  - aeson
+  - servant
+  - servant-server
+  - text
+  - bytestring
+  - containers
+  - optparse-generic
+  - warp
+
+library:
+  source-dirs: src
+
+executable:
+  main: Main.hs
+  source-dirs: app
+  dependencies:
+    - Grendel
+
+tests:
+  test:
+    main: test.hs
+    source-dirs: test
+    dependencies:
+      - Grendel
+      - tasty
+      - tasty-discover
+      - tasty-hspec
+      - tasty-hedgehog
+      - hedgehog
+      - hspec
