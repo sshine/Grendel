@@ -14,12 +14,16 @@ copyright:   2020 Simon Shine
 dependencies:
   - base
   - aeson
-  - servant
-  - servant-server
-  - text
   - bytestring
   - containers
+  - http-client
   - optparse-generic
+  - servant
+  - servant-client
+  - servant-client-core
+  - servant-server
+  - text
+  - wai
   - warp
 
 library:
@@ -43,3 +47,5 @@ tests:
       - tasty-hedgehog
       - hedgehog
       - hspec
+      - hspec-wai
+      - hedgehog-servant

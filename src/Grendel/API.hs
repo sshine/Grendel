@@ -18,5 +18,5 @@ app = serve api server
 server :: Server API
 server = ping
 
-ping :: Server API
+ping :: Handler Bool
 ping = pure True

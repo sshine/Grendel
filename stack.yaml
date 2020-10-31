@@ -1,3 +1,5 @@
 resolver: lts-16.18
 packages:
   - .
+extra-deps:
+  - hedgehog-servant-0.0.0.1@sha256:71bbe7a4cb3e134e1126b916c7cfb61701cc2ac3c166121828c7d08d1fed13b3,3045

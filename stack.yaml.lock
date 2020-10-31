@@ -3,7 +3,14 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages: []
+packages:
+- completed:
+    hackage: hedgehog-servant-0.0.0.1@sha256:71bbe7a4cb3e134e1126b916c7cfb61701cc2ac3c166121828c7d08d1fed13b3,3045
+    pantry-tree:
+      size: 399
+      sha256: 3144c5a9e29c4d39868ecc96d4b0ffdfc9ab47761e89a5f9a68541c6dfd4d863
+  original:
+    hackage: hedgehog-servant-0.0.0.1@sha256:71bbe7a4cb3e134e1126b916c7cfb61701cc2ac3c166121828c7d08d1fed13b3,3045
 snapshots:
 - completed:
     size: 532172
