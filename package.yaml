@@ -16,6 +16,9 @@ dependencies:
   - aeson
   - bytestring
   - containers
+  - gogol
+  - gogol-core
+  - gogol-drive
   - http-client
   - optparse-generic
   - servant

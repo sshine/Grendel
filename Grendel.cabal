@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ec870cdb85c300bc83f0452c96d7e2a7ad8b7ac4209f2c50e0797e2f0099825a
+-- hash: 87a32935e1a395cbb76cb7c111659fb94cac466c539135b396cefaf1d20a9a66
 
 name:           Grendel
 version:        0.1.0
@@ -21,6 +21,7 @@ build-type:     Simple
 library
   exposed-modules:
       Grendel.API
+      Grendel.Drive
   other-modules:
       Paths_Grendel
   hs-source-dirs:
@@ -30,6 +31,9 @@ library
     , base
     , bytestring
     , containers
+    , gogol
+    , gogol-core
+    , gogol-drive
     , http-client
     , optparse-generic
     , servant
@@ -53,6 +57,9 @@ executable Grendel
     , base
     , bytestring
     , containers
+    , gogol
+    , gogol-core
+    , gogol-drive
     , http-client
     , optparse-generic
     , servant
@@ -78,6 +85,9 @@ test-suite test
     , base
     , bytestring
     , containers
+    , gogol
+    , gogol-core
+    , gogol-drive
     , hedgehog
     , hspec
     , hspec-wai

@@ -5,6 +5,45 @@
 
 packages:
 - completed:
+    subdir: gogol
+    name: gogol
+    version: 0.5.0
+    git: https://github.com/brendanhay/gogol.git
+    pantry-tree:
+      size: 1289
+      sha256: 3986b88546250d4325d87be555fde73a52487694afc286e995d8d31dfd8b1b94
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+  original:
+    subdir: gogol
+    git: https://github.com/brendanhay/gogol.git
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+- completed:
+    subdir: core
+    name: gogol-core
+    version: 0.5.0
+    git: https://github.com/brendanhay/gogol.git
+    pantry-tree:
+      size: 732
+      sha256: 1cf97a788d6c3a804a9287bcb3c17a92ac93f9ab1f44cad6c9ad7be4a6653275
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+  original:
+    subdir: core
+    git: https://github.com/brendanhay/gogol.git
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+- completed:
+    subdir: gogol-drive
+    name: gogol-drive
+    version: 0.5.0
+    git: https://github.com/brendanhay/gogol.git
+    pantry-tree:
+      size: 4830
+      sha256: 636db2ca85b3b01197d53c711b01e8cf515ab9b65ee996a1950a8ff0dc829c79
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+  original:
+    subdir: gogol-drive
+    git: https://github.com/brendanhay/gogol.git
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+- completed:
     subdir: servant
     name: servant
     version: '0.18'

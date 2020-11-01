@@ -2,6 +2,12 @@ resolver: lts-16.20
 packages:
   - .
 extra-deps:
+  - git: https://github.com/brendanhay/gogol.git
+    commit: d7c7d71fc985cd96fb5f05173da6c607da362b74
+    subdirs:
+      - gogol
+      - core
+      - gogol-drive
   - git: https://github.com/haskell-servant/servant.git
     commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
     subdirs:
