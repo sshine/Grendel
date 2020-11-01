@@ -5,15 +5,60 @@
 
 packages:
 - completed:
-    hackage: hedgehog-servant-0.0.0.1@sha256:71bbe7a4cb3e134e1126b916c7cfb61701cc2ac3c166121828c7d08d1fed13b3,3045
+    subdir: servant
+    name: servant
+    version: '0.18'
+    git: https://github.com/haskell-servant/servant.git
     pantry-tree:
-      size: 399
-      sha256: 3144c5a9e29c4d39868ecc96d4b0ffdfc9ab47761e89a5f9a68541c6dfd4d863
+      size: 2741
+      sha256: 63fbab135704ce0e431ced334569a49805fa085e339cb14fc11a67e975ac35de
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
   original:
-    hackage: hedgehog-servant-0.0.0.1@sha256:71bbe7a4cb3e134e1126b916c7cfb61701cc2ac3c166121828c7d08d1fed13b3,3045
+    subdir: servant
+    git: https://github.com/haskell-servant/servant.git
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+- completed:
+    subdir: servant-client
+    name: servant-client
+    version: '0.18'
+    git: https://github.com/haskell-servant/servant.git
+    pantry-tree:
+      size: 1346
+      sha256: b76daea7f3418e0605869785aff40d372f6611e398de5601f0b5bc2f62c863ad
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+  original:
+    subdir: servant-client
+    git: https://github.com/haskell-servant/servant.git
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+- completed:
+    subdir: servant-client-core
+    name: servant-client-core
+    version: '0.18'
+    git: https://github.com/haskell-servant/servant.git
+    pantry-tree:
+      size: 1444
+      sha256: 44c496a47641072c9415ed1ada5af81f95bab93a77e05b686e6eff51405acde3
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+  original:
+    subdir: servant-client-core
+    git: https://github.com/haskell-servant/servant.git
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+- completed:
+    subdir: servant-server
+    name: servant-server
+    version: '0.18'
+    git: https://github.com/haskell-servant/servant.git
+    pantry-tree:
+      size: 2727
+      sha256: 61c3a50e10cfd8c490aa9c45fb4a81b96825f91a3b4285703e19544f2b261824
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+  original:
+    subdir: servant-server
+    git: https://github.com/haskell-servant/servant.git
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
 snapshots:
 - completed:
-    size: 532172
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/18.yaml
-    sha256: 4f2a092c6f4869854e8d7435ab98ce5157c641022c3cbfc4c4614ff3db752e62
-  original: lts-16.18
+    size: 532177
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/20.yaml
+    sha256: 0e14ba5603f01e8496e8984fd84b545a012ca723f51a098c6c9d3694e404dc6d
+  original: lts-16.20

@@ -1,5 +1,11 @@
-resolver: lts-16.18
+resolver: lts-16.20
 packages:
   - .
 extra-deps:
-  - hedgehog-servant-0.0.0.1@sha256:71bbe7a4cb3e134e1126b916c7cfb61701cc2ac3c166121828c7d08d1fed13b3,3045
+  - git: https://github.com/haskell-servant/servant.git
+    commit: c1105899f47d5537c1bdc8c86bee3523bdf05282
+    subdirs:
+      - servant
+      - servant-client
+      - servant-client-core
+      - servant-server

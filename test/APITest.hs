@@ -6,11 +6,10 @@
 
 module APITest where
 
-import           Network.HTTP.Client
+import           Network.HTTP.Client (newManager, defaultManagerSettings)
 import           Network.Wai
 import qualified Network.Wai.Handler.Warp as Warp
---import           Servant.Client.Core (BaseUrl(..))
-import           Servant.Client -- (BaseUrl(..), runClientM)
+import           Servant.Client (BaseUrl(..), runClientM, parseBaseUrl, client, mkClientEnv)
 
 import           Test.Hspec
 

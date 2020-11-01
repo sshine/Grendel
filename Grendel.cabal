@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 14e22e9f29d29a7dc23610b45c4df450738d7b8999586da86d7aefd0ee3358d9
+-- hash: ec870cdb85c300bc83f0452c96d7e2a7ad8b7ac4209f2c50e0797e2f0099825a
 
 name:           Grendel
 version:        0.1.0
@@ -79,7 +79,6 @@ test-suite test
     , bytestring
     , containers
     , hedgehog
-    , hedgehog-servant
     , hspec
     , hspec-wai
     , http-client

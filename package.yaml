@@ -48,4 +48,3 @@ tests:
       - hedgehog
       - hspec
       - hspec-wai
-      - hedgehog-servant
