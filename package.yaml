@@ -20,7 +20,9 @@ dependencies:
   - gogol-core
   - gogol-drive
   - http-client
+  - microlens
   - optparse-generic
+  - resourcet
   - servant
   - servant-client
   - servant-client-core
