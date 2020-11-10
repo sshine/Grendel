@@ -11,21 +11,27 @@ author:      Simon Shine
 maintainer:  shreddedglory@gmail.com
 copyright:   2020 Simon Shine
 
+default-extensions:
+  - OverloadedStrings
+
 dependencies:
   - base
   - aeson
   - bytestring
   - containers
+  - directory
+  - filepath
   - gogol
   - gogol-core
   - gogol-drive
   - http-client
   - microlens
-  - optparse-generic
+# - optparse-generic
   - resourcet
   - servant
   - servant-client
-  - servant-client-core
+  - JuicyPixels
+  - servant-JuicyPixels
   - servant-server
   - text
   - wai

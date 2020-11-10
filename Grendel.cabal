@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 91ac7e451aa3078b30e67496058e1938e91ab1dd973cd14d8ebfc750c1b5cef7
+-- hash: 7a42813351c9d5ea9140eeadbd03c3398caace11bb890a5be8d285a036eb6e69
 
 name:           Grendel
 version:        0.1.0
@@ -21,26 +21,31 @@ build-type:     Simple
 library
   exposed-modules:
       Grendel.API
+      Grendel.Database
       Grendel.Drive
+      Grendel.Types
   other-modules:
       Paths_Grendel
   hs-source-dirs:
       src
+  default-extensions: OverloadedStrings
   build-depends:
-      aeson
+      JuicyPixels
+    , aeson
     , base
     , bytestring
     , containers
+    , directory
+    , filepath
     , gogol
     , gogol-core
     , gogol-drive
     , http-client
     , microlens
-    , optparse-generic
     , resourcet
     , servant
+    , servant-JuicyPixels
     , servant-client
-    , servant-client-core
     , servant-server
     , text
     , wai
@@ -53,22 +58,25 @@ executable Grendel
       Paths_Grendel
   hs-source-dirs:
       app
+  default-extensions: OverloadedStrings
   build-depends:
       Grendel
+    , JuicyPixels
     , aeson
     , base
     , bytestring
     , containers
+    , directory
+    , filepath
     , gogol
     , gogol-core
     , gogol-drive
     , http-client
     , microlens
-    , optparse-generic
     , resourcet
     , servant
+    , servant-JuicyPixels
     , servant-client
-    , servant-client-core
     , servant-server
     , text
     , wai
@@ -83,12 +91,16 @@ test-suite test
       Paths_Grendel
   hs-source-dirs:
       test
+  default-extensions: OverloadedStrings
   build-depends:
       Grendel
+    , JuicyPixels
     , aeson
     , base
     , bytestring
     , containers
+    , directory
+    , filepath
     , gogol
     , gogol-core
     , gogol-drive
@@ -97,11 +109,10 @@ test-suite test
     , hspec-wai
     , http-client
     , microlens
-    , optparse-generic
     , resourcet
     , servant
+    , servant-JuicyPixels
     , servant-client
-    , servant-client-core
     , servant-server
     , tasty
     , tasty-discover
